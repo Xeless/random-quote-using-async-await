@@ -19,8 +19,8 @@ button.addEventListener("click", async function(){
             const section = document.createElement("section")
             const figure = document.createElement("figure")
             const blockquote = document.createElement("blockquote")
-            const p = document.createElement("p")
-            p.textContent = data.quote
+            const h1 = document.createElement("h1")
+            h1.textContent = data.quote
 
             const figcaption = document.createElement("figcaption")
             const div = document.createElement("div")
@@ -42,11 +42,11 @@ button.addEventListener("click", async function(){
             document.body.appendChild(section)
             section.appendChild(figure)
             figure.appendChild(blockquote)
-            blockquote.appendChild(p)
+            blockquote.appendChild(h1)
             section.appendChild(figcaption)
             figcaption.appendChild(div)
-            div.appendChild(img)
-            div.appendChild(address)
+            blockquote.appendChild(address)
+            blockquote.appendChild(img)
             address.appendChild(a)
             a.appendChild(small)
 
