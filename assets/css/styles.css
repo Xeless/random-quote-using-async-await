@@ -10,6 +10,17 @@
 body {
   background-color: #292a2b;
 }
+body button {
+  border-radius: 10px;
+  padding: 0.4% 0.6%;
+  background: #292a2b;
+  border: 1px solid gray;
+  margin-top: 2%;
+  margin-left: 3%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
 body section figure blockquote {
   position: relative;
   font-family: "Barlow Condensed", sans-serif;
@@ -64,10 +75,14 @@ body section figure blockquote address {
   margin-left: 150px;
   padding-left: 12px;
 }
-body section figure blockquote img {
+body section figure blockquote div {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
-  width: 50%;
-  height: 50%;
+  margin-left: 3%;
   margin-top: 5%;
 }
 body section figcaption {

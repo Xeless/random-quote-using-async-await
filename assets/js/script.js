@@ -3,6 +3,11 @@ const button = document.getElementById("test")
 
 
 button.addEventListener("click", async function(){
+    const suppresionSection = document.querySelector("section")
+    if(suppresionSection){
+
+        suppresionSection.remove()
+    }
 
 
 
@@ -24,14 +29,12 @@ button.addEventListener("click", async function(){
 
             const figcaption = document.createElement("figcaption")
             const div = document.createElement("div")
-            const img = document.createElement("img")
-            img.src = data.photo
+            div.classList.add("photo-citation")
+            div.style.backgroundImage = `url('${data.photo}')`
             const address = document.createElement("address")
             address.textContent = "-"
             const a = document.createElement("a")
             a.textContent = data.author
-            const small = document.createElement("small")
-            small.textContent = data.total_quotes
 
 
 
@@ -46,9 +49,8 @@ button.addEventListener("click", async function(){
             section.appendChild(figcaption)
             figcaption.appendChild(div)
             blockquote.appendChild(address)
-            blockquote.appendChild(img)
+            blockquote.appendChild(div)
             address.appendChild(a)
-            a.appendChild(small)
 
             
         

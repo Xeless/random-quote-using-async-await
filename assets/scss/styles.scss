@@ -9,6 +9,18 @@
 
 body{
     background-color: #292a2b;
+
+    button{
+        border-radius: 10px;
+        padding: 0.4% 0.6%; 
+        background: #292a2b;
+        border: 1px solid gray;
+        margin-top: 2%;
+        margin-left: 3%;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
     section{
         figure{
             blockquote{
@@ -71,13 +83,15 @@ body{
                     padding-left:12px;
                 }
 
-                img{
+                div{
+                    width: 200px;
+                    height: 200px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     border-radius: 50%;
-                    width: 50%;
-                    height: 50%;
+                    margin-left: 3%;
                     margin-top: 5%;
-
-                 
                 }
             }
         }
@@ -89,12 +103,6 @@ body{
                 max-width: 620px;
                 margin: 80px auto;
                 align-self: center;
-            div{
-
-              
-
-             
-            }
         }
     }
 }
